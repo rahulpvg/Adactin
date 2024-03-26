@@ -74,7 +74,7 @@ public class LoginPageTest extends BaseClass {
 		String user = Utility.getDataFromExcel(1, 1);
 		String pass = Utility.getDataFromExcel(2, 1);
 		loginPage.loginToApplication(user, pass);
-		 soft = new SoftAssert ();
+		soft = new SoftAssert ();
 	}
 	@Test (priority = 2)
 	public void verifyLogo ()
@@ -94,15 +94,10 @@ public class LoginPageTest extends BaseClass {
 	@Test (priority = 1)
 	public void verifyLoginbutton() throws IOException
 	{
-		testID = "0002";
-		String url = driver.getCurrentUrl();
-		String title = driver.getTitle();
-		System.out.println(url);
-		System.out.println(title);			
-		
-		Assert.assertEquals(url, "https://adactinhotelapp.com/SearchHotel.php",
+		testID = "0002";		
+		Assert.assertEquals(driver.getCurrentUrl(), "https://adactinhotelapp.com/SearchHotel.php",
 				"URL of Search Hotel Page is wrong");
-		Assert.assertEquals(title, "Adactin.com - Search Hotel",
+		Assert.assertEquals(driver.getTitle(), "Adactin.com - Search Hotel",
 				"Title of Search Hotel Page is wrong");
 		soft.assertAll();
 //		if(url.equals("https://adactinhotelapp.com/SearchHotel.php") 

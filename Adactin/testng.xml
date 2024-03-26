@@ -9,7 +9,7 @@
 	  	  <test name="ChromeTest">
 	  <parameter name="browser" value="chrome"/>
 	    <classes>
-		  <class name="testScripts.LoginPageTest"/>		
+		  <class name="t, ,estScripts.LoginPageTest"/>		
 		  <class name="testScripts.SearchHotelPageTest"/>
 		  <class name="testScripts.SelectHotelPageTest"/>
 		  <class name="testScripts.BookHotelPageTest"/>	 
