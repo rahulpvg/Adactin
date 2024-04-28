@@ -127,18 +127,13 @@ public class SearchHotelPage {
 		{
 			resetButton.click();
 		}
-		
 		public void clickOnBookeditinrary ()
 		{
 			bookedItinrary.click();
 			System.out.println("Booked Itinrary opened successfully");
 		}
-		
 		public void clickOnLogout () throws InterruptedException
 		{
-//			wait = new WebDriverWait (driver, 20);
-//			wait.until(ExpectedConditions.visibilityOf(logout));
-//			Thread.sleep(4000);
 			logout.click();
 			System.out.println("Logout");
 		}

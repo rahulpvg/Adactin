@@ -81,6 +81,7 @@ public class LoginPageTest extends BaseClass {
 	{
 		testID = "0001";
 		Assert.assertTrue(loginPage.logo(), "Logo is wrong");
+		soft.assertTrue(loginPage.logo(), "Logo is wrong");
 //		if (loginPage.logo() == true)
 //		{
 //			System.out.println("PASS");
@@ -98,8 +99,10 @@ public class LoginPageTest extends BaseClass {
 		Assert.assertEquals(driver.getCurrentUrl(), "https://adactinhotelapp.com/SearchHotel.php",
 				"URL of Search Hotel Page is wrong");
 		Assert.assertEquals(driver.getTitle(), "Adactin.com - Search Hotel",
-				"Title of Search Hotel Page is wrong");
+			"Title of Search Hotel Page is wrong");
+		
 		soft.assertAll();
+		
 //		if(url.equals("https://adactinhotelapp.com/SearchHotel.php") 
 //				&& title.equals("Adactin.com - Search Hotel"))
 //		{

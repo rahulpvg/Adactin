@@ -13,14 +13,10 @@ public class LoginPage {
 	// Declaration
 	private WebDriver driver;
 	private WebDriverWait wait;
-	@FindBy (xpath ="//img[@class = 'logo']")
-	private WebElement logo;
-	@FindBy (xpath = "//input[@id='username']")
-	private WebElement userName;
-	@FindBy (xpath = "//input[@id='password']")
-	private WebElement password;
-	@FindBy (xpath = "//input[@id='login']")
-	private WebElement loginButton;
+	@FindBy (xpath ="//img[@class = 'logo']") private WebElement logo;
+	@FindBy (xpath = "//input[@id='username']") private WebElement userName;
+	@FindBy (xpath = "//input[@id='password']") private WebElement password;
+	@FindBy (xpath = "//input[@id='login']") private WebElement loginButton;
 	
 	// Initialization
 	public LoginPage (WebDriver driver)
